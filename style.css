@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #d3bb7b;
+}
+
+.contacto{
+
+    position: relative;
+    border-radius: 20px;
+    padding: 25px 25px 45px 25px;
+    margin: 40px;
+    background-color: white;
+}
+
+h1{
+    background-color: #d3bb7b;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}

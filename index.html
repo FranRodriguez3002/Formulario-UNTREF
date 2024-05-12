@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Francisco Rodriguez</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+   
+<div class="contacto">
+
+  <h1>Contactenos</h1>
+     <form action="https://formsubmit.co/franrodriguez3002@gmail.com" method="POST">
+        <fieldset>
+          <label for="nombreCompleto">Nombre Completo</label>
+          <input type="text" placeholder="EJ: Francisco Rodriguez" id="nombreCompleto" maxlength="70">
+
+          <label for="fechaNacimiento">Fecha de nacimiento</label>
+          <input type="date" id="fechaNacimiento" max="2024-05-11">
+
+          <label for="genero">Genero</label>
+          <input type="checkbox" name="Masculino" id="genero" value="masculino"> Masculino
+          <input type="checkbox" name="Femenino" id="genero" value="femenino"> Femenino
+
+          <label for="rol">Seleccione su rol</label>
+          <select name="rol" id="rol">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Profesor">Profesor</option>
+          </select>
+         
+          <label for="email">Correo electronico</label>
+          <input type="email" name="email" placeholder="EJ: franrodriguez3002@gmail.com" id="email" maxlength="50">
+          <input type="hidden" name="_autoresponse" value="Tu consulta fue recibida">
+
+          <label for="archivo">Seleccione su archivo</label>
+          <input type="file" id="archivo">
+
+          <label for="comentario">Comentario</label>
+          <textarea name="Comentario" id="comentario" placeholder="Deja tu comentario!" cols="30" rows="10" maxlength="500"></textarea>
+
+          <input type="hidden" name="_captcha" value="false">
+          
+          <input class="button-primary" type="submit" value="Enviar">
+          <input type="reset" value="limpiar">
+      
+        </fieldset>
+      </form>
+</div>
+    
+</body>
+</html>
